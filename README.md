@@ -4,7 +4,12 @@ iot devices reverse engineered so you can understand them better
 ## Zoetouch by 1byone
 Amazon link : (https://www.amazon.com/dp/B07FKCGDCH/)
 
-Description: This is a bluetooth enabled home body scale with BMI and body fat analysis. The scale has four electrodes that measure impedance. This value is included in the measurment reported to the bluetooth stack. Once the scale is on it is shown on a BLE scan as ```Health Scale```
+Description: This is a bluetooth enabled home body scale with BMI and body fat analysis. The scale has four electrodes that measure impedance. This value is included in the measurment reported to the bluetooth stack. Once the scale is on it is shown on a BLE scan as ```Health Scale```. I have notiiced that Bluetooth remains on shortly, even after the display turns off (not always the case). 
+
+It is possible to read and write to the device (I have not tested writing to it).
+
+Read/Notify (UUID): 0xFFF4 
+Wrrite (UUID): 0xFFF1 
 
 ### Scale readings via Bluetooth
 Struct (can be copied into 010 Editor) (11 bytes total):
