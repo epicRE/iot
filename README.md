@@ -9,7 +9,8 @@ Amazon link : (https://www.amazon.com/dp/B07FKCGDCH/)
 It is possible to read and write to the device (I have not tested writing to it).
 
 Read/Notify (UUID): 0xFFF4 
-Wrrite (UUID): 0xFFF1 
+
+Write (UUID): 0xFFF1 
 
 ### Scale readings via Bluetooth
 Struct (can be copied into 010 Editor) (11 bytes total) (ushort=2 bytes):
