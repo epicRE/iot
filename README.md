@@ -38,7 +38,8 @@ When providing a scale measurement ```scale_reading_type_identifier``` has the v
 
 If I am not mistaken, it looks like the Android app uses the impedance for calculating the BMI only. Everything else is just formulas using data you input into the app (i.e., height, age etc.).
 
-Default on state:
+Default message broadcast when on and nothing is placed on the scale:
 
 ```CF000000000000000001CE```
 
+EOF
