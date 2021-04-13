@@ -34,6 +34,8 @@ actual_weight = weight_int * 0.01
 
 ```B801``` turns into ```440``` unsiged integer which will give us ```4.4 kg```
 
+When providing a scale measurement ```scale_reading_type_identifier``` has the value of ```CF```
+
 If I am not mistaken, it looks like the Android app uses the impedance for calculating the BMI only. Everything else is just formulas using data you input into the app (i.e., height, age etc.).
 
 Default on state:
