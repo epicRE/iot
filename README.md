@@ -4,9 +4,10 @@ iot devices reverse engineered so you can understand them better
 ## Zoetouch by 1byone
 Amazon link : (https://www.amazon.com/dp/B07FKCGDCH/)
 
-Description: This is a bluetooth enabled home body scale with BMI and body fat analysis. The scale has four electrodes that measure impedance. This value is included in the measurment reported to the bluetooth stack. Once the scale is on it is shown on the 
+Description: This is a bluetooth enabled home body scale with BMI and body fat analysis. The scale has four electrodes that measure impedance. This value is included in the measurment reported to the bluetooth stack. Once the scale is on it is shown on a BLE scan as ```Health Scale```
 
-Struct (can be copied into 010 Editor):
+### Scale readings via Bluetooth
+Struct (can be copied into 010 Editor) (11 bytes total):
 ```c
 struct zoetouch_scale {  
     byte      scale_reading_type_identifier;
@@ -17,7 +18,7 @@ struct zoetouch_scale {
     ushort    unknown3;
 };
 ```
-I have verifiied values for ```scale_reading_type_identifier``` and ```weight```
+I have verifiied values for ```scale_reading_type_identifier``` and ```weight```. 
 
 Example of weight extraction and calculation :
 
@@ -28,3 +29,8 @@ actual_weight = weight_int * 0.01
 ```B801``` turns into ```440``` unsiged integer which will give us ```4.4 kg```
 
 If I am not mistaken, it looks like the Android app uses the impedance for calculating the BMI only. Everything else is just formulas using data you input into the app (i.e., height, age etc.).
+
+Default on state:
+
+```CF000000000000000001CE```
+
