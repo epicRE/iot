@@ -1,5 +1,5 @@
 # iot
-iot devices reverse engineered so you can understand them better
+iot devices decoded so you can understand them better
 
 ## Zoetouch by 1byone
 Amazon link: (https://www.amazon.com/dp/B07FKCGDCH/)
