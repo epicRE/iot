@@ -4,6 +4,9 @@ LED lights are now available with bluetooth communications. After decoding the p
 
 The model is : [https://play.google.com/store/apps/details?id=shy.smartled](https://play.google.com/store/apps/details?id=shy.smartled)
 
+Broadcast as: 
+"ELK-BLE"
+
 The following GATT characteristic UUIDs are available:
 
 ```
